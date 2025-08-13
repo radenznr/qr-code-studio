@@ -216,7 +216,7 @@ export default function App() {
           <div className="flex items-center gap-2">
             <div className="p-2 rounded-xl bg-gray-900 text-white"><QrCode className="w-5 h-5" /></div>
             <h1 className="text-xl font-semibold">QR Code Generator</h1>
-            <span className="hidden sm:inline text-sm text-gray-500">— responsive • modern • professional</span>
+            <span className="hidden sm:inline text-sm text-gray-500"></span>
           </div>
           <div className="flex items-center gap-2">
             <button
@@ -396,7 +396,6 @@ export default function App() {
 
       <footer className="max-w-6xl mx-auto px-4 pb-8">
         <div className="text-xs text-gray-500 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-          <span>Built with React + Tailwind + qrcode. No data leaves your browser.</span>
           <span className="text-gray-600">© {new Date().getFullYear()} R Zanuar Eko Prastio. All rights reserved.</span>
         </div>
       </footer>
