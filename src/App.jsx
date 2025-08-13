@@ -34,7 +34,7 @@ export default function App() {
   useFavicon(FAVICON_URL);
 
   const canvasRef = useRef(null);
-  const [text, setText] = useState("https://example.com");
+  const [text, setText] = useState("https://qr.rzep.web.id");
   const [size, setSize] = useState(320);
   const [margin, setMargin] = useState(2);
   const [level, setLevel] = useState("M"); // L/M/Q/H
@@ -159,7 +159,7 @@ export default function App() {
   };
 
   const resetAll = () => {
-    setText("https://example.com");
+    setText("https://qr.rzep.web.id");
     setSize(320);
     setMargin(2);
     setLevel("M");
