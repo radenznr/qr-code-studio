@@ -383,9 +383,14 @@ export default function App() {
               <div className="text-xs text-gray-500 font-mono">{filenameBase()}</div>
             </div>
 
-            <div className="w-full aspect-square max-w-[min(90vw,560px)] grid place-items-center rounded-2xl bg-gray-50 border border-dashed border-gray-200">
-              <canvas ref={canvasRef} className="rounded-xl shadow-sm" />
-            </div>
+            <div className="w-full aspect-square max-w-[min(90vw,560px)] grid place-items-center rounded-2xl bg-gray-50 border border-dashed border-gray-200 overflow-hidden">
+  <canvas
+    ref={canvasRef}
+    className="rounded-xl shadow-sm w-full h-auto max-w-full max-h-full"
+    style={{ imageRendering: 'pixelated' }}
+  />
+</div>
+
 
             <div className="mt-4 text-xs text-gray-500 text-center">
               Tip: Untuk cetak atau QR sangat kecil, gunakan size & margin lebih besar.
